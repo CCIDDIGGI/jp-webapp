@@ -1,0 +1,6 @@
+<form #cardForm="ngForm" (ngSubmit)="onSubmit(cardForm)">
+    <input type="text" name="tcg" [(ngModel)]="tcg" required>
+    <input type="text" name="cardId" [(ngModel)]="cardId" required>
+    <button type="submit">Get Cards</button>
+</form>
+
